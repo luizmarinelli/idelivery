@@ -6,7 +6,53 @@
     <div class="side-menu" *ngIf="sideMenu == true">
         <app-side-menu></app-side-menu>
     </div>
-    <div class="content">
-        AAAAAAAAAAAAAAAAAA
+    <div class="container">
+        <div class="content">
+            <div class="row-categorias">
+                <div class="categorias mat-elevation-z4" matRipple (click)="openOpcoes()">
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="pizza"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="apple"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="hotdog"></fa-icon>
+                </div>
+                <br>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+            </div>
+    
+            <div class="row-categorias">
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+                <div class="categorias mat-elevation-z4" matRipple>
+                    <fa-icon [icon]="burger"></fa-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="side-options" *ngIf="sideOption == true">
+        <app-side-options></app-side-options>
     </div>
 </div>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { faPizzaSlice, faHamburger, faAppleAlt, faHotdog, faFish } from '@fortawesome/free-solid-svg-icons';
+import {  } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header-menu',
@@ -7,6 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderMenuComponent implements OnInit {
   sideMenu: boolean = false;
+  sideOption: boolean = true;
+
+  pizza = faPizzaSlice;
+  burger = faHamburger;
+  hotdog = faHotdog;
+  apple = faAppleAlt;
 
   constructor() { }
 
@@ -18,6 +26,14 @@ export class HeaderMenuComponent implements OnInit {
       this.sideMenu = true;
     } else {
       this.sideMenu = false;
+    }
+  }
+
+  openOpcoes(){
+    if(!this.sideOption){
+      this.sideOption = true;
+    } else {
+      this.sideOption = false;
     }
   }
 

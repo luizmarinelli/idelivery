@@ -5,20 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderMenuComponent } from './header-menu/header-menu.component';
 import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material';
+import { MatButtonModule, MatRippleModule } from '@angular/material';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SideOptionsComponent } from './side-options/side-options.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderMenuComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    SideOptionsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatRippleModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

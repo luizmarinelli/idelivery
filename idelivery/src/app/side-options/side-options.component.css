@@ -1,0 +1,31 @@
+.imagem{
+    margin: 10px;
+    width: 25vw;
+    height: 25vh;
+}
+
+img{
+    width: 23.7vw;
+}
+
+.descricao{
+    margin-top: 10px;
+}
+
+fa-icon{
+    font-size: 13px;
+    margin: 2px;
+}
+
+.texto{
+    font-size: 14px;
+}
+
+.icones{
+    display: flex;
+    justify-content: space-between;
+    width: 23.7vw;
+    padding: 5px;
+    background-color: black;
+    margin-top: 10px;
+}

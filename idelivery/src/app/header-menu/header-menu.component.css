@@ -21,11 +21,29 @@
     z-index: 2;
 }
 
+.side-options{
+    display: flex;
+    right: 0;
+    width: 25vw;
+    height: 94vh;
+    background-color: rgb(22, 68, 22);
+    color: white;
+    position: absolute;
+    z-index: 2;
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(98, 177, 98);
+}
+
 .content{
     display: flex;
+    justify-content: center;
+    width: 680px;
     height: 94vh;
-    width: 100vw;
-    background-color: rgb(98, 177, 98);
     color: white;
     z-index: 1;
 }
@@ -40,3 +58,26 @@ mat-icon{
     color: white;
 }
 
+fa-icon{
+    font-size: 72px;
+}
+
+.row-categorias{
+    width: 680px;
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.categorias{
+    cursor: pointer;
+    text-align: center;
+
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
